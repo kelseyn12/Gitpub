@@ -18,8 +18,11 @@ app.get('/drinks/:index', (req, res) => {
     // res.send(drinks[req.params.index]);
     res.render('show.ejs', {
         drink: drinks[req.params.index],
-        title: `${drinks[req.params.index].name}`
-    });
+        title: `${drinks[req.params.index].name}`});
+});
+
+app.get('/drinks/:id', (req, res) => {
+    res.send(req.params.id);
 });
 
 

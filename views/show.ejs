@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+</head>
+<body>
+    <script>
+        console.log('I will only log on the client side')
+    </script>
+    <% console.log('I will only log on the server side') %>
+    <h1><%= title %></h1>
+    <% console.log(drink) %>
+    <h2>The <%= drink.name %> costs  $<%= drink.price %></h2>
+        <a href="/drinks">Back to all drinks</a>
+</body>
+</html>
