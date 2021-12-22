@@ -8,15 +8,19 @@ const port = 3000;
 
 
 app.get('/drinks/', (req, res) => {
-    res.send(drinks);
-    // res.render('index.ejs', {
-    //     allDrinks: drinks
-    // })
+    // res.send(drinks);
+    res.render('index.ejs', {
+        allDrinks: drinks
+    })
 });
 
-// app.get('/drinks/:index', (req, res) => {
-//     res.send(drinks[req.params.index]);
-// });
+app.get('/drinks/:index', (req, res) => {
+    // res.send(drinks[req.params.index]);
+    res.render('show.ejs', {
+        drink: drinks[req.params.index],
+        title: `${drinks[req.params.index].name}`
+    });
+});
 
 
 

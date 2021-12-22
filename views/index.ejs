@@ -8,7 +8,15 @@
 </head>
 <body>
     <h1>Welcome to GitPub</h1>
-    
+    <ol style="text-transform: capitalize;">
+    <% allDrinks.forEach(function(drink, i) { %>
+        <li>
+            <a href="/drinks/<%= i %>">
+                <%= drink.name %>
+            </a>
+        </li>
+   <% }) %>
+    </ol>
     <style type="text/css">
     body {
       color: blanchedalmond;
