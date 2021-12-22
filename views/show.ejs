@@ -7,13 +7,16 @@
     <title><%= title %></title>
 </head>
 <body>
+    
     <script>
         console.log('I will only log on the client side')
     </script>
     <% console.log('I will only log on the server side') %>
-    <h1><%= title %></h1>
+    <h1>At foo bar</h1>
+    <h2><%= title %></h2>
+    <%= drink.image %>
     <% console.log(drink) %>
-    <h2>The <%= drink.name %> costs  $<%= drink.price %></h2>
+    <h3>The <%= drink.name %> costs  $<%= drink.price %></h3>
         <a href="/drinks">Back to all drinks</a>
 </body>
 </html>
