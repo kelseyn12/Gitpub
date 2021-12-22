@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= drink.name %></title>
+    <title><%= food.name %></title>
 </head>
 <body>
     
@@ -13,12 +13,11 @@
     </script>
     <% console.log('I will only log on the server side') %> -->
     <h1>At foo bar</h1>
-    <h2><%= drink.name %></h2>
-    <img src=" <%= drink.image %>.jpg">
-    <!-- <% console.log(drink) %> -->
-    <h3>The <%= drink.name %> costs  $<%= drink.price %></h3>
-        <a href="/drinks">Back to all drinks</a>
+    <h2><%= food.name %></h2>
+    <img src=" <%= food.image %>.jpg">
+    <!-- <% console.log(food) %> -->
+    <h3>The <%= food.name %> costs  $<%= food.price %></h3>
         <a href="/food">Back to all food</a>
-        
+        <a href="/drinks">Back to all drinks</a>
 </body>
 </html>

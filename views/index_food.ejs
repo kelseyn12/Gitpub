@@ -9,10 +9,10 @@
 <body>
     <h1>Welcome to GitPub</h1>
     <ol style="text-transform: capitalize;">
-    <% allDrinks.forEach(function(drink, i) { %>
+    <% allFood.forEach(function(food, i) { %>
         <li>
-            <a href="/drinks/<%= i %>">
-                <%= drink.name %>
+            <a href="/food/<%= i %>">
+                <%= food.name %>
             </a>
         </li>
    <% }) %>
@@ -22,6 +22,7 @@
       color: blanchedalmond;
       background-color: steelblue;
     }
-  </style>  
+  </style>
+  <a href="/food">Back to all food items</a>  
 </body>
 </html>
