@@ -8,11 +8,15 @@ const port = 3000;
 
 
 app.get('/drinks/', (req, res) => {
-    res.send('Welcome to the Gitpub App!')
+    res.send(drinks);
+    // res.render('index.ejs', {
+    //     allDrinks: drinks
+    // })
 });
-app.get('/drinks/:index', (req, res) => {
-    res.send(drinks[req.params.index]);
-});
+
+// app.get('/drinks/:index', (req, res) => {
+//     res.send(drinks[req.params.index]);
+// });
 
 
 
